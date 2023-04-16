@@ -17,6 +17,7 @@ io.on('connection',(socket)=>{
   socket.on('message',(data)=>{
     socket.emit('broadcastme',data);
     socket.broadcast.emit('broadcast', data);
+    console.log(data);
   })
   
   socket.on('disconnect',function(){
