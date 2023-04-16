@@ -2,8 +2,10 @@ const app = require('express')();
 const http = require('http').Server(app);
 const io = require('socket.io')(http);
 
+app.set("view engine","ejs");
+
 app.get('/',(req,res)=>{
-  res.sendFile("https://raw.githubusercontent.com/chaman56/liveChat/main/index.html");
+  res.render("index");
 })
 var users = 0;
 var user=0;
