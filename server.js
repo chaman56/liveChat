@@ -3,7 +3,7 @@ const http = require('http').Server(app);
 const io = require('socket.io')(http);
 
 app.get('/',(req,res)=>{
-  res.sendFile("C:/Users/ycham/OneDrive/Desktop/VScode/ChatApp/index.html");
+  res.sendFile("https://github.com/chaman56/liveChat/blob/main/index.html");
 })
 var users = 0;
 var user=0;
